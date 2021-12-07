@@ -6,10 +6,14 @@ use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
+    /**
+     * @Route("/auteurs")
+     */
+
 class AuteursController extends AbstractController
 {
     /**
-     * @Route("/auteurs", name="auteurs")
+     * @Route("/", name="auteurs")
      */
     public function index(): Response
     {
@@ -19,7 +23,7 @@ class AuteursController extends AbstractController
     }
 
    /**
-     * @Route("/auteurs/voir_auteur", name="voir_auteur")
+     * @Route("/voir_auteur", name="voir_auteur")
      */
     public function voir_auteur(): Response
     {
@@ -29,7 +33,7 @@ class AuteursController extends AbstractController
     }
 
     /**
-     * @Route("/auteurs/modifier_auteur", name="modifier_auteur")
+     * @Route("/modifier_auteur", name="modifier_auteur")
      */
     public function modifier_auteur(): Response
     {
@@ -39,7 +43,7 @@ class AuteursController extends AbstractController
     }
 
     /**
-     * @Route("/auteurs/supprimer_auteur", name="supprimer_auteur")
+     * @Route("/supprimer_auteur", name="supprimer_auteur")
      */
     public function supprimer_auteur(): Response
     {
@@ -49,7 +53,7 @@ class AuteursController extends AbstractController
     }
 
     /**
-     * @Route("/auteurs/ajouter_auteur", name="ajouter_auteur")
+     * @Route("/ajouter_auteur", name="ajouter_auteur")
      */
     public function ajouter_auteur(): Response
     {
